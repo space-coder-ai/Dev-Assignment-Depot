@@ -6,17 +6,19 @@
 */
 
 function countVowels(str) {
-  let vowels = 'aeiouAEIOU';
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (vowels.includes(str[i])) {
-      count++;
-    }
-  }
-  return count;
+  let vowelsCount = 0;
+  const charactersArray = str.toLowerCase().split("");
+  let vowels = ["a", "e", "i", "o", "u"];
+  charactersArray.forEach((character) => {
+    vowels.forEach((vowel) => {
+      if (vowel === character) {
+        vowelsCount += 1;
+      }
+    });
+  });
+  console.log(vowelsCount)
+  return vowelsCount;
 }
 
 module.exports = countVowels;
 
-str = 'yash kumar saini';
-console.log(countVowels(str)); // 1

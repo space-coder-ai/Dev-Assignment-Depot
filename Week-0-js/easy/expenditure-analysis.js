@@ -34,20 +34,3 @@ function calculateTotalSpentByCategory(transactions) {
 
 module.exports = calculateTotalSpentByCategory;
 
-obj1 = {
-  id: 1,
-  timestamp: 1656076800000,
-  price: 10,
-  category: 'Food',
-  itemName: 'Pizza',
-};
-
-obj2 = {
-  id: 2,
-  timestamp: 1656076800000,
-  price: 20,
-  category: 'Food',
-  itemName: 'Burger',
-};
-
-console.log(calculateTotalSpentByCategory([obj1, obj2])); // [{ category: 'Food', totalSpent: 30 }]

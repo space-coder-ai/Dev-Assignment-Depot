@@ -16,6 +16,3 @@ function findLargestElement(numbers) {
 }
 
 module.exports = findLargestElement;
-
-nums = [3, 7, 2, 9, 1];
-console.log(findLargestElement(nums));
